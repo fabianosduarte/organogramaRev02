@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="-pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Organograma Modelo</title>
+        <script language=javascript type="text/javascript">
+            var popupWindow = null;
+            var sBrowser, sUsrAg = navigator.userAgent;
+
+            if (sUsrAg.indexOf("Firefox") > -1) {
+                window.alert("A impressão desta página apresenta grande degradação no Firefox.\nCaso deseje imprimir esta página corretamente, recomenda-se utilizar um outro navegador,\ncomo o Microsoft Edge ou o Google Chrome.");
+            }
+
+            function popupLegenda(url,winName,w,h,scroll){
+                LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+                TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+                settings =
+                'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+                popupWindow = window.open(url,winName,settings)
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <nav>
+            <a href="legenda.html"onclick="popupLegenda(this.href,'myWindow','350','280','yes');return false">Legenda</a>
+            <a href="http://www.petrobras.com.br" target="blank">Download</a>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="scroller">
+                    <div id="organogramaModelo">
+                        <div id="tetoTopo">
+                            <div class="blocoTopo">
+                                <div class="blocoCargoTopo">
+            
+                                    <!-- Card -->
+                                    <div class="card cardGE">
+                                        <header class="cabecCaixa cabecGE">Gerência</header>
+                                        <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                        <div class="fichacard">
+                                            <span class="spNome">Nome</span><br>
+                                            <span>Cargo</span><br>
+                                            <span>&#9742 90000-0000</span><br>
+                                            <span>Id: XXXX</span>
+                                        </div>
+                                    </div>
+                                    <!--Card -->
+            
+                                </div>
+                                <div class="blocoCargosTeto">
+                                    <div id="caixaLateralEsquerda" class="margemTetoTopo">
+                                        <div class="caixaLateral margemTetoCargos">
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                            <div class="bordaLat">
+                                                <div class="conHorizTracejado"></div>
+                                            </div>
+                                        </div>
+                                        <div class="caixaLateral">
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                            <div class="bordaLat">
+                                                <div class="conHorizontalTeto"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="linhaOrtogonal"></div>
+                                    </div>
+                                    <div id="caixaLateralDireita" class="margemTetoTopo">
+                                        <div class="caixaLateral margemTetoCargos">
+                                            <div class="bordaLat">
+                                                <div class="conHorizontalTeto"></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                        </div>
+                                        <div class="caixaLateral">
+                                            <div class="bordaLat">
+                                                <div class="conHorizontalTeto"></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div id="pisoColunas" class="blocoPiso">
+                            <div class="blocoColunas">
+                                <div id="coluna01">
+                                    <div id="ger01">
+                                        <div class="caixaSuperior">
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conCantoSupEsq"></div>
+                                                <div></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conVert"></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="subger01">
+                                        <div class="blocoFilho">
+                                            <div class="margemLateral"></div>
+                                            <div class="blocoLatEsq">
+                                                <div class="caixaLateral">
+                                                    <div class="bordaLat">
+                                                        <div class="conHorizontal"></div>
+                                                    </div>
+            
+                                                    <!-- Card -->
+                                                    <div class="card cardGE">
+                                                        <header class="cabecCaixa cabecGE">Gerência</header>
+                                                        <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                        <div class="fichacard">
+                                                            <span class="spNome">Nome</span><br>
+                                                            <span>Cargo</span><br>
+                                                            <span>&#9742 90000-0000</span><br>
+                                                            <span>Id: XXXX</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--Card -->
+            
+                                                    <div class="separadorLinha"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="subger02">
+                                        <div class="blocoFilho">
+                                            <div class="margemLateral"></div>
+                                            <div class="blocoLatEsq">
+                                                <div class="caixaLateral">
+                                                    <div class="bordaLat">
+                                                        <div class="conHorizontal"></div>
+                                                    </div>
+            
+                                                    <!-- Card -->
+                                                    <div class="card cardGE">
+                                                        <header class="cabecCaixa cabecGE">Gerência</header>
+                                                        <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                        <div class="fichacard">
+                                                            <span class="spNome">Nome</span><br>
+                                                            <span>Cargo</span><br>
+                                                            <span>&#9742 90000-0000</span><br>
+                                                            <span>Id: XXXX</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--Card -->
+            
+                                                    <div class="separadorLinha"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="subger03">
+                                        <div class="blocoFilho">
+                                            <div class="margemLateral"></div>
+                                            <div class="blocoLatEsq">
+                                                <div class="caixaLateral">
+                                                    <div class="bordaLat">
+                                                        <div class="conHorizontal"></div>
+                                                    </div>
+                                                    <div class="blocoLatDir">
+            
+                                                        <!-- Card -->
+                                                        <div class="card cardGE">
+                                                            <header class="cabecCaixa cabecGE">Gerência</header>
+                                                            <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                            <div class="fichacard">
+                                                                <span class="spNome">Nome</span><br>
+                                                                <span>Cargo</span><br>
+                                                                <span>&#9742 90000-0000</span><br>
+                                                                <span>Id: XXXX</span>
+                                                            </div>
+                                                        </div>
+                                                        <!--Card -->
+            
+                                                        <div class="bordaTopoPisoEsq">
+                                                            <div class="margemLateral"></div>
+                                                            <div class="conVert"></div>
+                                                            <div></div>
+                                                            <div class="blocoFilho">
+                                                                <div class="caixaLateral">
+                                                                    <div class="bordaLat">
+                                                                        <div class="conCaixaFilha"></div>
+                                                                    </div>
+            
+                                                                    <!-- Card -->
+                                                                    <div class="card cardGE">
+                                                                        <header class="cabecCaixa cabecGE">Gerência</header>
+                                                                        <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                                        <div class="fichacard">
+                                                                            <span class="spNome">Nome</span><br>
+                                                                            <span>Cargo</span><br>
+                                                                            <span>&#9742 90000-0000</span><br>
+                                                                            <span>Id: XXXX</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--Card -->
+            
+                                                                    <div class="separadorLinha"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="subger04">
+                                            <div class="blocoFilho">
+                                                <div class="margemLateral"></div>
+                                                <div class="blocoLatEsq">
+                                                    <div class="caixaLateral">
+                                                        <div class="bordaLat">
+                                                            <div class="conHorizontal"></div>
+                                                        </div>
+                                                        <div class="blocoLatDir">
+            
+                                                            <!-- Card -->
+                                                            <div class="card cardGE">
+                                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                                <div class="fichacard">
+                                                                    <span class="spNome">Nome</span><br>
+                                                                    <span>Cargo</span><br>
+                                                                    <span>&#9742 90000-0000</span><br>
+                                                                    <span>Id: XXXX</span>
+                                                                </div>
+                                                            </div>
+                                                            <!--Card -->
+            
+                                                            <div class="bordaTopoPisoEsq">
+                                                                <div class="margemLateral"></div>
+                                                                <div class="conVert"></div>
+                                                                <div></div>
+                                                                <div class="blocoFilho">
+                                                                    <div class="caixaLateral">
+                                                                        <div class="bordaLat">
+                                                                            <div class="conCaixaFilha"></div>
+                                                                        </div>
+            
+                                                                        <!-- Card -->
+                                                                        <div class="card cardGE">
+                                                                            <header class="cabecCaixa cabecGE">Gerência</header>
+                                                                            <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                                            <div class="fichacard">
+                                                                                <span class="spNome">Nome</span><br>
+                                                                                <span>Cargo</span><br>
+                                                                                <span>&#9742 90000-0000</span><br>
+                                                                                <span>Id: XXXX</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--Card -->
+            
+                                                                        <div class="separadorLinha"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="blocoFilho">
+                                            <div class="margemLateral"></div><div class="caixaLateral">
+                                                <div class="bordaLat">
+                                                    <div class="conCaixaFilha"></div>
+                                                </div>
+                                                <!-- Card -->
+                                                <div class="card cardGE">
+                                                    <header class="cabecCaixa cabecGE">Gerência</header>
+                                                    <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                    <div class="fichacard">
+                                                        <span class="spNome">Nome</span><br>
+                                                        <span>Cargo</span><br>
+                                                        <span>&#9742 90000-0000</span><br>
+                                                        <span>Id: XXXX</span>
+                                                    </div>
+                                                </div>
+                                                <!-- Card -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id=coluna02 class="blocoSegundaColuna">
+                                    <div id="ger02">
+                                        <div class="caixaSuperior">
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conVert"></div>
+                                                <div></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conVert"></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blocoFilho">
+                                        <div class="margemLateral"></div>
+                                        <div class="caixaLateral">
+                                            <div class="bordaLat">
+                                                <div class="conCaixaFilha"></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="coluna03" class="blocoColMeio">
+                                    <div id="ger03">
+                                        <div class="caixaSuperior">
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conVert"></div>
+                                                <div></div>
+                                            </div>
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conVert"></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="subger03" class="">
+                                        <div class="blocoFilho">
+                                            <div class="margemLateral"></div>
+                                            <div class="blocoLatEsq">
+                                                <div class="caixaLateral">
+                                                    <div class="bordaLat">
+                                                        <div class="conHorizontal"></div>
+                                                    </div>
+            
+                                                    <!-- Card -->
+                                                    <div class="card cardGE">
+                                                        <header class="cabecCaixa cabecGE">Gerência</header>
+                                                        <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                        <div class="fichacard">
+                                                            <span class="spNome">Nome</span><br>
+                                                            <span>Cargo</span><br>
+                                                            <span>&#9742 90000-0000</span><br>
+                                                            <span>Id: XXXX</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--Card -->
+            
+                                                    <div class="separadorLinha"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blocoFilho">
+                                        <div class="margemLateral"></div><div class="caixaLateral">
+                                            <div class="bordaLat">
+                                                <div class="conCaixaFilha"></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="coluna04" class="blocoColMeio">
+                                    <div id="ger04">
+                                        <div class="caixaSuperior">
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conVert"></div>
+                                                <div></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conVert"></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="subger04">
+                                        <div class="blocoFilho">
+                                            <div class="margemLateral"></div>
+                                            <div class="blocoLatEsq">
+                                                <div class="caixaLateral">
+                                                    <div class="bordaLat">
+                                                        <div class="conHorizontal"></div>
+                                                    </div>
+            
+                                                    <!-- Card -->
+                                                    <div class="card cardGE">
+                                                        <header class="cabecCaixa cabecGE">Gerência</header>
+                                                        <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                        <div class="fichacard">
+                                                            <span class="spNome">Nome</span><br>
+                                                            <span>Cargo</span><br>
+                                                            <span>&#9742 90000-0000</span><br>
+                                                            <span>Id: XXXX</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--Card -->
+            
+                                                    <div class="separadorLinha"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blocoFilho">
+                                        <div class="margemLateral"></div><div class="caixaLateral">
+                                            <div class="bordaLat">
+                                                <div class="conCaixaFilha"></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="coluna05" class="blocoPenultimaColuna">
+                                    <div id="ger05">
+                                        <div class="caixaSuperior">
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conVert"></div>
+                                                <div></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                            <div class="bordaTopoPisoEsq">
+                                                <div class="margemLateral"></div>
+                                                <div class="conVert"></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="subger05">
+                                        <div class="blocoFilho">
+                                            <div class="margemLateral"></div>
+                                            <div class="blocoLatEsq">
+                                                <div class="caixaLateral">
+                                                    <div class="bordaLat">
+                                                        <div class="conHorizontal"></div>
+                                                    </div>
+            
+                                                    <!-- Card -->
+                                                    <div class="card cardGE">
+                                                        <header class="cabecCaixa cabecGE">Gerência</header>
+                                                        <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                        <div class="fichacard">
+                                                            <span class="spNome">Nome</span><br>
+                                                            <span>Cargo</span><br>
+                                                            <span>&#9742 90000-0000</span><br>
+                                                            <span>Id: XXXX</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--Card -->
+            
+                                                    <div class="separadorLinha"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blocoFilho">
+                                        <div class="margemLateral"></div><div class="caixaLateral">
+                                            <div class="bordaLat">
+                                                <div class="conCaixaFilha"></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div id="coluna06">
+                                    <div class="caixaCantoDir">
+                                        <div class="conCantoSupDir"></div>
+            
+                                        <!-- Card -->
+                                        <div class="card cardGE">
+                                            <header class="cabecCaixa cabecGE">Gerência</header>
+                                            <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                            <div class="fichacard">
+                                                <span class="spNome">Nome</span><br>
+                                                <span>Cargo</span><br>
+                                                <span>&#9742 90000-0000</span><br>
+                                                <span>Id: XXXX</span>
+                                            </div>
+                                        </div>
+                                        <!--Card -->
+            
+                                        <div class="bordaTopoPisoEsq">
+                                            <div class="margemLateral"></div>
+                                            <div class="conVert"></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div id="subger05">
+                                        <div class="blocoFilho">
+                                            <div class="margemLateral"></div>
+                                            <div class="blocoLatEsq">
+                                                <div class="caixaLateral">
+                                                    <div class="bordaLat">
+                                                        <div class="conHorizontal"></div>
+                                                    </div>
+            
+                                                    <!-- Card -->
+                                                    <div class="card cardGE">
+                                                        <header class="cabecCaixa cabecGE">Gerência</header>
+                                                        <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                        <div class="fichacard">
+                                                            <span class="spNome">Nome</span><br>
+                                                            <span>Cargo</span><br>
+                                                            <span>&#9742 90000-0000</span><br>
+                                                            <span>Id: XXXX</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--Card -->
+            
+                                                    <div class="separadorLinha"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blocoFilho">
+                                        <div class="margemLateral"></div>
+                                        <div class="caixaLateral">
+                                            <div class="bordaLat">
+                                                <div class="conCaixaFilha"></div>
+                                            </div>
+            
+                                            <!-- Card -->
+                                            <div class="card cardGE">
+                                                <header class="cabecCaixa cabecGE">Gerência</header>
+                                                <img src="pics/foto.jpg" alt="Foto do colaborador">
+                                                <div class="fichacard">
+                                                    <span class="spNome">Nome</span><br>
+                                                    <span>Cargo</span><br>
+                                                    <span>&#9742 90000-0000</span><br>
+                                                    <span>Id: XXXX</span>
+                                                </div>
+                                            </div>
+                                            <!--Card -->
+            
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script src="dragScroll.js"></script>
+
+    <script>
+
+        var $container = $(".container");
+        var $scroller = $(".scroller");
+        var $wrapper = $(".wrapper");
+
+        for (var i = 0; i < 100; i++) {
+            $wrapper.append('<div>'+ i +'</div>')
+        }
+
+        bindDragScroll($container, $scroller);
+
+    </script>
+
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</html>

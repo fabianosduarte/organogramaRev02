@@ -1,0 +1,491 @@
+:root{
+    --largpadrao: 53px;
+    --altpadrao: 72px;
+    /* As medidas acima tomam como base as dimensões da foto do colaborador no card do organograma  */
+    
+    --larguracard: calc(var(--largpadrao) + calc(var(--largpadrao) * 2.3));
+    --alturacard: calc(var(--altpadrao) / 3.00) + var(--altpadrao);
+
+    --espessura: 1px;
+    --estiloborda: solid;
+    --corborda: gray;
+    --alturaconector: 30px;
+    --larguraconector: 50px;
+    --larguraconectorteto: 150px;
+    --alturaseparador: 30px;
+    --margemcoluna: 25px;
+}
+
+body{
+    white-space: nowrap;
+}
+
+nav{
+    overflow: hidden;
+    background-color: #008542;
+    margin-bottom: 20px;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 98.7%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a{
+    display: inline-block;
+    width: max-content;
+    color: white;
+    text-align: left;
+    padding: 10px 16px;
+    font-size: 17px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+span{
+    display: inline-block;
+}
+
+.imgcard{
+    width: var(--largpadrao);
+    height: var(--altpadrao);
+}
+
+
+/* Cards */
+
+.card{
+    width: 176px;
+    height: 98px;
+    border: 1px solid gray;
+}
+
+.cardGE{
+    background-color: #dae3f3;
+}
+
+.cardPFocalDEP{
+    background-color: #e7e6e6;
+}
+
+.cardGG{
+    background-color: #deebf7;
+}
+
+.cardGL{
+    background-color: #e0ecd8;
+}
+
+.cardGS{
+    background-color: #fff2cc;
+}
+
+.cardCO{
+    background-color: #fbe5d6;
+}
+
+.cardTracejado{
+    border: var(--espessura) dashed var(--corborda);
+}
+
+
+/* Separadores e margens */
+
+.separador{
+    width: auto;
+    height: var(--alturaseparador);
+    background-color: #f3f7fa;
+}
+
+.separadorLinha{
+    width: auto;
+    height: var(--alturaseparador);
+}
+
+.margemLateral{
+    width: calc((var(--larguracard) - 1px) / 2);
+}
+
+.margemTetoTopo{
+    margin-top: 50px;
+}
+
+.margemTetoCargos{
+    margin-bottom: 50px;
+}
+
+.spNome{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* Blocos */
+
+.blocoSupMeio{
+    width: auto;
+    height: fit-content;
+    border-top: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.blocoLatEsq{
+    width: fit-content;
+    height: auto;
+    border-left: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.blocoLatDir{
+    display: grid;
+    grid-template-rows: max-content auto;
+}
+
+.blocoFilho{
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+.blocoColunas{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+
+.blocoSegundaColuna{
+    width: auto;
+    padding-left: calc(var(--margemcoluna)*2);
+    padding-right: var(--margemcoluna);
+    border-top: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.blocoColMeio{
+    width: auto;
+    padding-left: var(--margemcoluna);
+    padding-right: var(--margemcoluna);
+    border-top: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.blocoPenultimaColuna{
+    width: auto;
+    padding-left: var(--margemcoluna);
+    padding-right: calc(var(--margemcoluna)*2);
+    border-top: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.blocoTopo{
+    display: grid;
+    grid-template-rows: max-content max-content;
+}
+
+.blocoCargoTopo{
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+}
+
+.blocoCargosTeto{
+    display: grid;
+    grid-template-columns: max-content min-content max-content;
+    justify-content: center;
+}
+
+
+/* Caixas */
+
+.caixaSuperior{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.caixaLateral{
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+
+.caixaCantoDir{
+    display: grid;
+    grid-template-rows: auto max-content;
+}
+
+
+/* Bordas */
+
+.bordaTopoPisoEsq{
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+.bordaLat{
+    display: grid;
+    grid-template-rows: max-content;
+}
+
+
+/* Linhas de Conectores */
+
+.conVert{
+    height: var(--alturaconector);
+    border-left: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.conHorizontal{
+    width: var(--larguraconector);
+    height: calc((var(--alturacard) + 1px) / 2);
+    border-bottom: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.conHorizontalTeto{
+    width: var(--larguraconectorteto);
+    height: calc((var(--alturacard) + 1px) / 2);
+    border-bottom: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.conHorizTracejado{
+    width: var(--larguraconectorteto);
+    height: calc((var(--alturacard) + 1px) / 2);
+    border-bottom: var(--espessura) dashed var(--corborda);
+}
+
+.conCantoSupEsq{
+    width: auto;
+    height: var(--alturaconector);
+    border: var(--espessura) var(--estiloborda) var(--corborda);
+    border-right: none;
+    border-bottom: none;
+}
+
+.conCantoSupDir{
+    width: calc((var(--larguracard) + 1px) / 2);
+    height: var(--alturaconector);
+    border-right: var(--espessura) var(--estiloborda) var(--corborda);
+    border-top: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.conCaixaFilha{
+    width: var(--larguraconector);
+    height: calc((var(--alturacard) + 1px) / 2);
+    border-bottom: var(--espessura) var(--estiloborda) var(--corborda);
+    border-left: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+.linhaOrtogonal{
+    height: 350px;
+    border-left: var(--espessura) var(--estiloborda) var(--corborda);
+}
+
+
+/* Cabeçalhos */
+
+.cabecCaixa{
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cabecGE{
+    background-color: #006298;
+    color: white;
+}
+
+.cabecPFocalDEP{
+    background-color: #7c7c7c;
+    color: white;
+}
+
+.cabecGG{
+    background-color: #5b9bd5;
+    color: white;
+}
+
+.cabecGL{
+    background-color: #008542;
+    color: white;
+}
+
+.cabecGS{
+    background-color: #ffc000;
+}
+
+.cabecCO{
+    background-color: #ed7d31;
+	color: white;
+}
+
+#organogramaModelo{
+    user-select: none;
+    cursor:default;
+    margin-top: 50px;
+    display: block;
+    align-items: center;
+    width: max-content;
+}
+
+.fichacard{
+    padding-top: 5px;
+    padding-left: 3px;
+    vertical-align: top;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+/* Legenda */
+
+#tabelalegenda{
+    border-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linhatabela{
+    height: 30px;
+}
+
+.cordescricao{
+    width: 40px;
+}
+
+.lge{
+    background-color: #006298;
+}
+
+.lPFocalDEP{
+    background-color: #7c7c7c;
+}
+
+.lgg{
+    background-color: #5b9bd5;
+}
+
+.lcGL{
+    background-color: #008542;
+}
+
+.lcGS{
+    background-color: #ffc000;
+}
+
+.lCO{
+    background-color: #ed7d31;
+}
+
+.ldescricao{
+    padding-left: 10px;
+}
+
+/* Drag and roll */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html,
+body,
+main {
+    min-height: 100%
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    border-radius:3px;
+    background-color: darkslategray;
+}
+
+.scroller {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.wrapper {
+    width: 2000px;
+    
+}
+
+.wrapper div {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-family: 'Roboto';
+    float: left;
+    color:#fff;
+}
+
+.wrapper div:not(:nth-child(10n)) {
+    border-right: 1px solid #ccc;
+}
+
+.wrapper div:not(:nth-last-child(-n + 10)) {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* Impressão */
+
+
+@media print{
+
+    body {
+        background-color:#fbe5d6;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .scroller{
+        overflow: hidden;
+    }
+
+    .container{
+        background-color: transparent;
+    }
+
+    #organogramaModelo{
+        /*-webkit-transform: scale(0.45);
+        -webkit-transform-origin: 0 0;
+        -moz-transform: scale(0.45);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.45);
+        -o-transform-origin: 0 0;
+        -ms-transform: scale(0.45);
+        -ms-transform-origin: 0 0;*/
+    }
+
+    .fichacard{
+        position: relative;
+    }
+
+}
