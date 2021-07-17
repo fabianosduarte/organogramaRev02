@@ -474,14 +474,14 @@ main {
     }
 
     #organogramaModelo{
-        /*-webkit-transform: scale(0.45);
+        -webkit-transform: scale(0.45);
         -webkit-transform-origin: 0 0;
         -moz-transform: scale(0.45);
         -moz-transform-origin: 0 0;
         -o-transform: scale(0.45);
         -o-transform-origin: 0 0;
         -ms-transform: scale(0.45);
-        -ms-transform-origin: 0 0;*/
+        -ms-transform-origin: 0 0;
     }
 
     .fichacard{
