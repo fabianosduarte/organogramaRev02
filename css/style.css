@@ -6,6 +6,11 @@
     --larguracard: calc(var(--largpadrao) + calc(var(--largpadrao) * 2.3));
     --alturacard: calc(var(--altpadrao) / 3.00) + var(--altpadrao);
 
+    /* Novo */
+    --alturacabecalho: 26px;
+    --alturaquadrofoto: 70px;
+    /* Novo */
+
     --espessura: 1px;
     --estiloborda: solid;
     --corborda: gray;
@@ -14,10 +19,6 @@
     --larguraconectorteto: 150px;
     --alturaseparador: 30px;
     --margemcoluna: 25px;
-}
-
-body{
-    white-space: nowrap;
 }
 
 nav{
@@ -59,12 +60,6 @@ span{
 
 
 /* Cards */
-
-.card{
-    width: 176px;
-    height: 98px;
-    border: 1px solid gray;
-}
 
 .cardGE{
     background-color: #dae3f3;
@@ -328,15 +323,6 @@ span{
     width: max-content;
 }
 
-.fichacard{
-    padding-top: 5px;
-    padding-left: 3px;
-    vertical-align: top;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
-
 
 /* Legenda */
 
@@ -389,18 +375,8 @@ span{
     box-sizing: border-box;
 }
 
-html,
 body {
-    height: 100%;
-}
-
-html,
-body,
-main {
-    min-height: 100%
-}
-
-body {
+    white-space: nowrap;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -451,15 +427,55 @@ main {
     border-bottom: 1px solid #ccc;
 }
 
+/* Novos cards */
+.tabelacard{
+    display: grid;
+    grid-template-rows: var(--alturacabecalho) var(--alturaquadrofoto);
+    width: 174px;
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.cabecalhocard{
+    vertical-align: middle;
+    line-height: var(--alturacabecalho);
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: cornflowerblue;
+}
+
+.corpocard{
+    display: grid;
+    grid-template-columns: 54px max-content;
+    background-color: aliceblue;
+}
+
+.quadrofoto{
+    height: var(--alturaquadrofoto);
+}
+
+.fichacard{
+    display: grid;
+    grid-template-rows: min-content;
+    padding: 5px;
+}
+
+.fichanome{
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
 
 /* Impressão */
 
 
 @media print{
 
-    body {
+    /*body {
         background-color:#fbe5d6;
-    }
+    }*/
 
     nav{
         display: none;
@@ -473,19 +489,31 @@ main {
         background-color: transparent;
     }
 
-    #organogramaModelo{
-        -webkit-transform: scale(0.45);
-        -webkit-transform-origin: 0 0;
-        -moz-transform: scale(0.45);
-        -moz-transform-origin: 0 0;
-        -o-transform: scale(0.45);
-        -o-transform-origin: 0 0;
-        -ms-transform: scale(0.45);
-        -ms-transform-origin: 0 0;
+    .fichacard{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
     }
 
-    .fichacard{
-        position: relative;
+    /*.fichatel{
+        background-color: #7c7c7c;
+    }
+
+    .fichaid{
+        background-color: #008542;
+    }*/
+
+    #organogramaModelo{
+        transform: scale(1.0);
+        transform-origin: 0 0;
+        -webkit-transform: scale(1.0);
+        -webkit-transform-origin: 0 0;
+        -moz-transform: scale(0.40);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(1.0);
+        -o-transform-origin: 0 0;
+        -ms-transform: scale(1.0);
+        -ms-transform-origin: 0 0;
+        zoom: 45%;
     }
 
 }
